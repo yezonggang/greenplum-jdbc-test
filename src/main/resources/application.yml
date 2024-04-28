@@ -1,0 +1,23 @@
+logging:
+  level:
+    root: debug
+
+server:
+  port: 9999
+  tomcat:
+    uri-encoding: utf-8
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+
+greenplum:
+  user: jdbctest
+  passwd: admin@123
+  db: jdbctest
+  url: jdbc:postgresql://19.25.36.19:5434
+  sql: select 1 as result;
+pool:
+  type: jdbc
+  test: false
