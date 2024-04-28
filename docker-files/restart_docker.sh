@@ -19,7 +19,7 @@ docker run -d \
   -e greenplum.user=jdbctest \
   -e greenplum.passwd=admin@123 \
   -e greenplum.db=jdbctest \
-  -e greenplum.url=jdbc:postgresql://19.25.36.19:5434 \
+  -e greenplum.url=jdbc:postgresql://127.0.0.1:5434 \
   -e pool.type=druid \
   -e pool.test=false \
   greenplum-jdbc-test:latest

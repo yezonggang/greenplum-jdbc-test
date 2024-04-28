@@ -25,7 +25,7 @@ public class HikariDataSourceConfig {
     @Value("${pool.test}")
     private boolean test;
 
-    @Bean
+    @Bean(name = "hikari_datasource")
     public DataSource get(){
         String urlAll = String.format("%s/%s", greenplumJdbcProperties.getUrl(), greenplumJdbcProperties.getDb());
         String driverClass = "org.postgresql.Driver";
